@@ -15,34 +15,157 @@
     <title>AKDEMIA SKILL</title>
 </head>
 <body class="cuerpo">
+
     <!-- BARRA DE NAVEGACION -->
-        <nav class="navbar navbar-expand-md barra-navigation">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-toggler">
-                    <a class="navbar-brand text-white " href="#"><span class="color-1">AKDEMIA</span> SKILL</a>
-                    <ul class="navbar-nav ">
+    <header >
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="color-1 fs-4">AKDEMIA</span> <span class="color-2 fs-4">SKILL</span></a>
+            <button class="navbar-toggler bg-white me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="color-1 fs-4">AKDEMIA</span> <span class="c-dark fs-4">SKILL</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contacto</a>
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Temario</a></li>
+                                <li><a class="dropdown-item" href="#">Video Tutoriales</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Comunidad</a></li>
+                                <li><a class="dropdown-item" href="#">Reforzamiento Particular</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <!--SLIDE-->
-        <div class="card">
-            <img src="img/universidades.jpg" class="card-img" alt="universidades de peru">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Quieres ingresar a la Universidad?</h5>
-                <p class="card-text">Con nuestra plataforma educativa, completamente gratuita, tienes todo lo que se necesitas para lograr el ansiado ingreso,</p>
-                <p class="card-text"><small>Que estas esperando...</small></p>
+        </div>
+    </nav>
+
+    <!--CARD TITLE-->
+    <div class="card">
+        <!--<img src="..." class="card-img" alt="...">-->
+        <div class="card-img-overlay imagen-card">
+            <h5 class="title-1 card-title text-white text-center ">Quieres ingresar a la Universidad?</h5>
+            <p class="parrafo card-text text-white text-center">Hazlo con nuestra creativa e innovadora plataforma educativa.</p>
+        </div>
+    </div>
+    </header>
+
+    <!--SECCION SOBRE NOSOTROS-->
+    <section>
+        <div class="container contenido">
+            <div class="row ">
+                <div class="col-6 col-md-3">
+                    <h2 class="text-white title-about"><img src="img/1 nuestro servicio.png" alt="nuestros-servicios">Nuestro servicio</h2>
+                    <p class="text-white parrafo-about">Incluye clases virtuales, sesiones grabadas, prácticas y simulacros de admisión. Además, contamos con material adicional para complementar y reforzar tus conocimientos.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="text-white title-about"><img src="img/2 tutoría permanente.png" alt="tutoria-permanente">Tutoria permanente</h2>
+                    <p class="text-white parrafo-about">Tutoría y acompañamiento académico permanente. También, tenemos un grupo de docentes altamente calificados que cuentan con años de experiencia enseñando en colegios y las principales academias preuniversitarias del país.
+                </p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="text-white title-about"><img src="img/3 talleres vocacionales.png" alt="nuestros-objetivos">Nuestro Objetivo</h2>
+                    <p class="text-white parrafo-about">Ser reconocidos como la mejor y más eficiente propuesta académica en cuanto a preparación y reforzamiento preuniversitario.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="text-white title-about"><img src="img/4 planes accesibles.png" alt="planes-accesibles">Planes accesibles</h2>
+                    <p class="text-white parrafo-about">Planes de pagos y precios accesibles para que el dinero no sea un obstáculo en el proceso de lograr tus objetivos educativos: ingresar a la universidad o mejorar tu promedio académico.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!--UNIVERSIDADES-->
+    <section class="contenido-pre">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-white title-descriptivo">Nuestros Cursos</h2>
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href=""><img src="img/agra-u.webp" class="card-img imagen-uni" alt="universidad-agraria">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. Agraria</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href="">
+                            <img src="img/sm-u.webp" class="card-img imagen-uni" alt="universidad-san-marcos">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. San Marcos</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href="">
+                            <img src="img/una-u.webp" class="card-img imagen-uni" alt="universidad-del-callao">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. Callao</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Force next columns to break to new line -->
+                <div class="w-100 m-3"></div>
+
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href="">
+                            <img src="img/uni-u.webp" class="card-img imagen-uni" alt="universidad-uni">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. UNI</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href="">
+                            <img src="img/ut-u.webp" class="card-img imagen-uni" alt="universidad-untels">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. UNTELS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 columna-u">
+                    <div class="card">
+                        <a href="">
+                            <img src="img/villa-u.webp" class="card-img imagen-uni" alt="universidad-villa-real">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">U. Villareal</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- JavaScript de Bootstrap -->
