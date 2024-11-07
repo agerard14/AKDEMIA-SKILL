@@ -205,8 +205,9 @@ h3{
     position: absolute;
 }
 .layer:hover h3{
-    bottom: 49%;
+    bottom: 41%;
     opacity: 1;
+    font-size: 50px;
 }
 
 /***---------FACILIDADES---------****/
@@ -315,7 +316,7 @@ h3{
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 20px 0;
 }
 .bi-youtube{
     color: #f44336;
